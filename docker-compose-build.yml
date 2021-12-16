@@ -6,7 +6,6 @@ volumes:
 services:
 
    geoserver:
-      image: kartoza/geoserver:${GS_VERSION}
       build:
         context: .
         args:
@@ -18,6 +17,7 @@ services:
           DOWNLOAD_ALL_COMMUNITY_EXTENSIONS: ${DOWNLOAD_ALL_COMMUNITY_EXTENSIONS}
       volumes:
         - geoserver-data:/opt/geoserver/data_dir
+ #        - /root/vis-gis-nr-2:/opt/geoserver/data_dir
       ports:
         - ${GEOSERVER_PORT}:8080
       restart: on-failure
@@ -31,4 +31,5 @@ services:
         - RECREATE_DATADIR=${RECREATE_DATADIR}
         - HTTP_PROXY_NAME
         - HTTP_PROXY_PORT
+        - STABLE_EXTENSIONS=${STABLE_EXTENSIONS}
 

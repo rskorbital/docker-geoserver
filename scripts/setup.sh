@@ -195,3 +195,6 @@ rm -rf /tmp/resources
 
 delete_file "${CATALINA_HOME}"/conf/tomcat-users.xml
 delete_file "${CATALINA_HOME}"/conf/web.xml
+
+# Install git
+id
