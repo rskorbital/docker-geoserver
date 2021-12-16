@@ -1,3 +1,9 @@
+# Visivi Git Data
+
+Set the environment variable:
+
+`export GEODATA_GIT_URL=https://github.com/rskorbital/vis-gis-nr-2.git`
+
 # Table of Contents
 * [Kartoza docker-geoserver](#kartoza-docker-geoserver)
    * [Getting the image](#getting-the-image)
